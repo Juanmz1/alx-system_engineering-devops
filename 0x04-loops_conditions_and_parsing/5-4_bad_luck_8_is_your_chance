@@ -3,14 +3,14 @@
 # displays good luck for the 8th loop iteration
 # displays Best School for the other iterations
 i=0
-while [$i -lt 10]
+while [$i -lt 10];
 do
 	if [$i -eq 4];then
-		echo "bad luck"
+	    echo "bad luck"
 	elif [$i -eq 8];then
-		echo "good luck"
+	    echo "good luck"
 	else
-		echo "Best School"
+	    echo "Best School"
 	fi
 	i=$((i+1))
 done
