@@ -6,10 +6,11 @@
 # Displays Y U no love me?! when receiving a SIGINT signal
 # Deletes the file /var/run/myscript.pid and
 #+terminates itself when receiving a SIGQUIT or SIGTERM signal
-termin() {
+terminator() {
 	rm/var/run/myscript.pid
 	exit
 	}
+echo "$$" > /var/run/myscript.pid
 while true;do
 	echo "To infinity and beyond"
 	sleep 2
