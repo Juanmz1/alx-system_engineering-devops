@@ -30,19 +30,16 @@ int main(void)
 	for (i = 0; i < 5; i++)
 	{
 		pid = fork();
-		if (pid < 0)
-		{
-			perror("Fork Error");
-			exit(EXIT_FAILURE);
-		}
-		else if (pid > 0)
+		if (pid > 0)
 		{
 			printf("Zombie process created PID:%d\n", pid);
-			exit(EXIT_SUCCESS);
+			sleep(1);
 		}
+		else
+			exit(0);
 	}
 	
 	infinite_while();
 
-	return 0;
+	return (EXIT_SUCCESS);
 }
