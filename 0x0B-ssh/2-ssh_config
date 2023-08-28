@@ -4,7 +4,7 @@ host *
     PasswordAuthentication no
     IdentityFile ~/.ssh/school
     PreferredAuthentication publickey
-    HostName 54.164.113.174
+    HostName 54.144.153.216
     User ubuntu
     SendEnv LANG LC_*
     HashKnownHosts yes
